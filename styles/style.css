@@ -74,9 +74,78 @@
 }
 
 .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('../images/cover.jpg')  center center / cover no-repeat;
     width: 1100px;
     height: 757px;
-    padding: 166px 0 50px;
+    padding: 165px 50px 51px;
+}
+
+.cover__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    color: #fff;
+}
+
+.aligned-text{
+    display: block;
+}
+
+.letter-spacing{
+    letter-spacing: 0.3em;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+}
+
+
+.aligned-text_center {
+    display: flex;
+    justify-content: center;
+    line-height: 137%;
+}
+.aligned-text_right {
+    line-height: 104%;
+    display: flex;
+    justify-content: end;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover__description-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 28px;
+    word-spacing: 19px;
+}
+
+.word-spacing-shortened {
+    word-spacing: 17px;
+}
+
+.word-spacing-extended {
+    word-spacing: 18px;
+}
+
+.bet-button {  
+    width: 256px;
+    height: 51px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
 }
