@@ -1,7 +1,7 @@
 @import url("global.css");
 
 .header {
-  width: 1100px;
+  max-width: 1100px;
   padding: 92px 49px 96px 50px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -85,7 +85,7 @@
   justify-content: space-between;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/cover.jpg") center / cover no-repeat;
-  width: 1100px;
+  max-width: 1100px;
   height: 757px;
   padding: 165px 50px 51px;
 }
@@ -173,7 +173,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 25px;
+  gap: 25px;
 }
 
 .lots__card-list-item {
@@ -251,9 +251,9 @@
 }
 
 .about {
-    padding: 146px 24px 0;
-    min-height: 595px;
-    width: 1100px;
+  padding: 146px 24px 0;
+  min-height: 595px;
+  max-width: 1100px;
 }
 .about__column {
     display: grid;
@@ -295,16 +295,12 @@
     color: #000;
 }
 
-/* .about.letter-spacing {
-  letter-spacing: -0.02em;
-} */
-
 .about__text:first-child {
     margin-bottom: 16px;
 }
 
 .footer {
-  width: 1100px;
+  max-width: 1100px;
   padding: 180px 50px 88px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
