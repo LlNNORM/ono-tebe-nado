@@ -4,7 +4,7 @@
   max-width: 1100px;
   padding: 92px 49px 96px 50px;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: 1fr min-content 1fr;
 }
 
 .header__menu {
@@ -297,6 +297,10 @@
 
 .about__text:first-child {
     margin-bottom: 16px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .footer {
