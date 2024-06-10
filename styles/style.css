@@ -1,3 +1,4 @@
+@import url(variables.css);
 @import url(global.css);
 
 .header {
@@ -19,7 +20,7 @@
 .header__links-list-item {
   position: relative;
   list-style: none;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
 }
 
 .header__links-list-item::before {
@@ -33,6 +34,15 @@
   border-radius: 100%;
 }
 
+.header__links-list-item::after {
+  content: "";
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
 .header__links-list-item:first-child {
   letter-spacing: 0;
 }
@@ -41,15 +51,23 @@
   content: none;
 }
 
-.header__link {
-  font-weight: 400;
-  font-size: 18px;
-  color: #000;
-  text-underline-offset: 4px;
+.header__links-list-item:first-child::after {
+  content: none;
 }
 
-.header__link_active {
+.header__link {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--co-black);
   text-decoration: none;
+  transition: all .4s;
+}
+
+.header__link:hover {
+  scale: 1.05;
+  color: var(--co-hover);
 }
 
 .header__logo {
@@ -63,13 +81,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
-  color: #000;
+  color: var(--co-black);
   font-style: normal;
 }
 
 .address a {
   text-decoration: underline;
   text-underline-offset: 4px;
+  transition: color .4s;
+}
+
+.address a:hover{
+  color: var(--co-hover);
 }
 
 .header__address {
@@ -92,7 +115,7 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
-  color: #fff;
+  color: var(--co-white);
 }
 
 .aligned-text {
@@ -100,11 +123,11 @@
 }
 
 .letter-spacing {
-  letter-spacing: 0.3em;
+  letter-spacing: .3em;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.6em;
+  letter-spacing: .6em;
 }
 
 .aligned-text_center {
@@ -130,28 +153,30 @@
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--co-white);
   padding-left: 28px;
   word-spacing: 19px;
-}
-
-.word-spacing-shortened {
-  word-spacing: 17px;
-}
-
-.word-spacing-extended {
-  word-spacing: 18px;
 }
 
 .bet-button {
   padding: 12px 32px 11px 31px;
   background-color: transparent;
-  box-shadow: none;
   border: 1px solid white;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--co-white);
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  scale: 1.05;
+}
+
+.bet-button:focus-visible {
+  color: 10px solid green;
+  outline: 2px solid white;
 }
 
 .lots {
@@ -163,7 +188,7 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--co-black);
 }
 
 .lots__card-list {
@@ -202,14 +227,14 @@
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 4px;
-  color: #fff;
+  color: var(--co-white);
 }
 
 .card__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #fff;
+  color: var(--co-white);
 }
 
 .card_type_film {
@@ -234,7 +259,7 @@
   margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
-  color: #000;
+  color: var(--co-black);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -259,7 +284,7 @@
   height: 240px;
   width: 240px;
   border-radius: 100%;
-  background-color: #000;
+  background-color: var(--co-black);
   grid-row: 1/3;
 }
 .about__logo-image {
@@ -271,7 +296,7 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--co-black);
   align-self: center;
 }
 .about__text {
@@ -279,8 +304,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  letter-spacing: 0.01em;
-  color: #000;
+  letter-spacing: .01em;
+  color: var(--co-black);
 }
 
 .about__text:first-child {
@@ -302,12 +327,19 @@
 .footer__menu-link {
   font-weight: 400;
   font-size: 18px;
-  color: #000;
+  color: var(--co-black);
   text-underline-offset: 4px;
+  transition: color .4s;
 }
+
+.footer__menu-link:hover {
+  color: var(--co-hover)
+}
+
 .footer__menu-link_active {
   text-decoration: none;
 }
+
 .footer__social-list {
   display: flex;
   width: 240px;
