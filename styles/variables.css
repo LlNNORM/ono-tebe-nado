@@ -1,5 +1,6 @@
 :root {
-    --co-hover: rgb(206, 130, 137);
+    --co-hover: rgba(255, 0, 153, 0.75);
     --co-black: #000;
     --co-white: #fff;
+    --co-overlay: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
