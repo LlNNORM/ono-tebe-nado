@@ -116,7 +116,7 @@
   flex-direction: column;
   justify-content: space-between;
   background: var(--co-overlay),
-    url(../images/cover.jpg) center / cover no-repeat;
+    url(../images/cover.webp) center / cover no-repeat;
   max-width: 1100px;
   min-height: 757px;
   padding: 165px 50px 51px;
@@ -263,17 +263,17 @@
 
 .card_type_film {
   background: var(--co-overlay),
-    url(../images/card-lot-01.jpg) center / cover no-repeat;
+    url(../images/card-lot-01.webp) center / cover no-repeat;
 }
 
 .card_type_book {
   background: var(--co-overlay),
-    url(../images/card-lot-02.jpg) center / cover no-repeat;
+    url(../images/card-lot-02.webp) center / cover no-repeat;
 }
 
 .card_type_picture {
   background: var(--co-overlay),
-    url(../images/card-lot-03.jpg) center / cover no-repeat;
+    url(../images/card-lot-03.webp) center / cover no-repeat;
 }
 
 .lots__look-more-link {
