@@ -3,4 +3,5 @@
     --co-black: #000;
     --co-white: #fff;
     --co-overlay: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    --common-transition: all 0.4s;
 }
